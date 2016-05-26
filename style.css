@@ -1,0 +1,77 @@
+body{
+	background-color: #efefef;
+	font-family: 'Open-Sans', arial;
+	font-weight: 400;
+}
+.dropdown{
+	width: 151px;
+}
+.dropbtn{
+	width: 150px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 2px;
+	background: white;
+	position: fixed;
+}
+a{
+	display: block;
+	background-color: lightgreen;
+	width: 148px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+a:hover{
+	background-color: lightblue;
+}
+.content{
+	display: none;
+	position: fixed;
+	margin-top: 30px;
+}
+.dropdown:hover .content{
+	display: block;
+}
+#singleMovie{
+	width: 400px;
+	margin: 30px;
+	margin-top: 100px;
+	margin-left: 550px;
+	display: inline-block;
+}
+#movieTitles{
+	text-align: center;
+}
+#movieImgs{
+	margin-left: 108px;
+}
+.dot{
+	width: 100px;
+	height: 70px;
+	border-radius: 5px;
+	border: none;
+	background-color: black;
+	margin-left: 30px;
+	margin-top: 270px;
+	position:fixed;
+}
+.left{
+	margin-left: 450px;
+}
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	}
+}
+.fade-in{
+	opacity: 0;
+	animation: fadeIn 4s linear;
+}
+.fade-out{
+	opacity: 1;
+}

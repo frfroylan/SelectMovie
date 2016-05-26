@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JSON - Test</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body onload='movieScript()'>
+
+	<div class="dropdown">
+		<button class="dropbtn">Select</button>
+		<div class="content">
+			<a class="anchor" href="#" onclick="generateMovies('Comedy')">Comedy</a>
+			<a class="anchor" href="#" onclick="generateMovies('Action')">Action</a>
+			<a class="anchor" href="#" onclick="generateMovies('Biography')">Biography</a>
+			<a class="anchor" href="#" onclick="generateMovies('Drama')">Drama</a>
+			<a class="anchor" href="#" onclick="generateMovies('Crime')">Crime</a>
+		</div>
+	</div>
+
+	<button onclick="changeMovie(-1);" class="dot left"></button>
+	<div id="singleMovie" class="fade-out">
+		<h1 id="movieTitles"></h1>
+		<img src="" alt="" id="movieImgs" />
+	</div>
+	<button onclick="changeMovie(-1);" class="dot right"></button>
+</body>
+</html>
